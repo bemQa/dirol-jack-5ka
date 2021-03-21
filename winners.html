@@ -27,6 +27,7 @@
 						<img src="img/logo.svg" alt="">
 					</a>
 					<a href="#!" class="burger"></a>
+					<img src="img/logo-5ka.svg" class="logo-5ka mobile-visible" alt="">
 					<nav class="menu-links">
 						<a href="index.html" class="menu-link">
 							<svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,22 +60,20 @@
 							</svg>
 							Вопрос-ответ
 						</a>
-						<a href="lk.html" class="menu-link desktop-visible login-link pop-op" data-popup="auth">
+						<a href="lk.html" class="menu-link login-link pop-op" data-popup="auth">
 							<svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M1.9809 24.3304H21.8934C22.4214 24.3298 22.9501 24.1211 23.3635 23.7499C23.7769 23.3788 24.0412 22.8755 24.0983 22.3506L26.2351 2.55306C26.2912 2.02815 26.1355 1.5249 25.8023 1.15373C25.469 0.782569 24.9854 0.573822 24.4575 0.573303H4.54496C4.01695 0.573822 3.48824 0.782569 3.07487 1.15373C2.66149 1.5249 2.39721 2.02815 2.34004 2.55306L0.203321 22.3506C0.14719 22.8755 0.302833 23.3788 0.636094 23.7499C0.969354 24.1211 1.453 24.3298 1.9809 24.3304ZM8.52402 17.3529C8.44146 17.261 8.37988 17.1519 8.34279 17.0318C8.30571 16.9117 8.29384 16.783 8.30787 16.653C8.3219 16.523 8.36155 16.3943 8.42456 16.2742C8.48757 16.1541 8.5727 16.045 8.67509 15.9531L11.4708 13.4417H3.91746C3.6534 13.4417 3.41142 13.3374 3.24473 13.1518C3.07805 12.9661 3.00033 12.7144 3.02867 12.4518C3.057 12.1893 3.18907 11.9375 3.39582 11.7519C3.60258 11.5662 3.86707 11.462 4.13113 11.462H11.6839L9.43066 8.95246C9.26434 8.76677 9.18689 8.51513 9.21534 8.2528C9.2438 7.99048 9.37582 7.73895 9.58241 7.55346C9.78899 7.36797 10.0532 7.2637 10.3171 7.26356C10.581 7.26342 10.8228 7.36742 10.9896 7.55271L14.7589 11.7507C14.9255 11.9369 15.0032 12.189 14.9748 12.4518C14.9464 12.7147 14.8144 12.9668 14.6076 13.1529L9.9319 17.3529C9.82955 17.4448 9.71194 17.5178 9.58578 17.5675C9.45963 17.6173 9.3274 17.6429 9.19666 17.6429C9.06592 17.6429 8.93922 17.6173 8.8238 17.5675C8.70839 17.5178 8.60652 17.4448 8.52402 17.3529Z" fill="white"/>
 							</svg>
 							Вход
 						</a>
+						<!-- только в авторизованном состоянии -->
+						<a href="index.html" class="menu-link logout-link link mobile-visible">Выйти</a>
 					</nav>
-					<a href="lk.html" class="menu-link mobile-visible login-link pop-op" data-popup="auth">
-						<svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M1.9809 24.3304H21.8934C22.4214 24.3298 22.9501 24.1211 23.3635 23.7499C23.7769 23.3788 24.0412 22.8755 24.0983 22.3506L26.2351 2.55306C26.2912 2.02815 26.1355 1.5249 25.8023 1.15373C25.469 0.782569 24.9854 0.573822 24.4575 0.573303H4.54496C4.01695 0.573822 3.48824 0.782569 3.07487 1.15373C2.66149 1.5249 2.39721 2.02815 2.34004 2.55306L0.203321 22.3506C0.14719 22.8755 0.302833 23.3788 0.636094 23.7499C0.969354 24.1211 1.453 24.3298 1.9809 24.3304ZM8.52402 17.3529C8.44146 17.261 8.37988 17.1519 8.34279 17.0318C8.30571 16.9117 8.29384 16.783 8.30787 16.653C8.3219 16.523 8.36155 16.3943 8.42456 16.2742C8.48757 16.1541 8.5727 16.045 8.67509 15.9531L11.4708 13.4417H3.91746C3.6534 13.4417 3.41142 13.3374 3.24473 13.1518C3.07805 12.9661 3.00033 12.7144 3.02867 12.4518C3.057 12.1893 3.18907 11.9375 3.39582 11.7519C3.60258 11.5662 3.86707 11.462 4.13113 11.462H11.6839L9.43066 8.95246C9.26434 8.76677 9.18689 8.51513 9.21534 8.2528C9.2438 7.99048 9.37582 7.73895 9.58241 7.55346C9.78899 7.36797 10.0532 7.2637 10.3171 7.26356C10.581 7.26342 10.8228 7.36742 10.9896 7.55271L14.7589 11.7507C14.9255 11.9369 15.0032 12.189 14.9748 12.4518C14.9464 12.7147 14.8144 12.9668 14.6076 13.1529L9.9319 17.3529C9.82955 17.4448 9.71194 17.5178 9.58578 17.5675C9.45963 17.6173 9.3274 17.6429 9.19666 17.6429C9.06592 17.6429 8.93922 17.6173 8.8238 17.5675C8.70839 17.5178 8.60652 17.4448 8.52402 17.3529Z" fill="white"/>
-						</svg>
-					</a>
 				</div>
 			</header>
 			<section class="inner-page winners-page">
 				<div class="container">
+					<img src="img/logo-5ka.svg" class="logo-5ka desktop-visible" alt="">
 					<div class="title">Победители</div>
 					<form class="input-field phone-filter">
                 		<input type="text" name="phone" class="phone-mask" placeholder="Поиск по номеру телефона">
@@ -84,6 +83,7 @@
 						<div class="tab tab-trigger active" data-tab="tab-daily">Ежедневные</div>
 						<div class="tab tab-trigger" data-tab="tab-weekly">Еженедельные</div>
 						<div class="tab tab-trigger" data-tab="tab-monthly">Ежемесячные</div>
+						<div class="tab tab-trigger" data-tab="tab-main">Главный приз</div>
 					</div>
 					<div class="tabs-content">
 						<div class="tab-item tab-daily active">
@@ -500,13 +500,18 @@
 								</table>
 							</div>
 						</div>
+						<div class="tab-item tab-main">
+							<div class="main-winner-announce">
+								Обладатель главного приза — участия в проекте Кати Адушкиной — будет определен 28.05.2021
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 		</div>
 		<footer>
 			<div class="container">
-				<div class="footer-announce">Срок регистрации кодов и покупки продукции с 01.01.2021 г. по 31.08.2021 г. Общий срок акции с 01.01.2021 г. по 31.12.2021 г. Информацию об организаторе акции, о правилах ее проведения, количестве призов, сроках, месте и порядке их получения смотрите на сайте dirolpromo.ru.</div>
+				<div class="footer-announce">Срок регистрации чеков с 01.04.21 по 30.04.21 г. Общий срок акции с 01.04.21 по 31.05.21 г. Информацию об организаторе акции, о правилах ее проведения, количестве призов, сроках, месте и порядке их получения смотрите на сайте dirolpromo.ru.</div>
 				<div class="footer-links">
 					<a href="#!" class="link" target="_blank">Политика конфиденциальности</a>
 					<a href="#!" class="link" target="_blank">Правила акции</a>
@@ -524,30 +529,23 @@
 			<div class="popup__wrap">
 				<a href="#!" class="close-popup js-close-popup"></a>
                 <div class="popup__inner">
-                	<div class="popup__title">Авторизация</div>
-                    <div class="popup__title2">Войти с помощью вконтакте</div>
-                    <form class="popup-form">
-                    	<div class="soc-auth-wrapper">
-							<button>
-								<img src="img/vk.svg" alt="">
-							</button>
-						</div>
-                    </form>
-                    <div class="separate"></div>
+                	<div class="popup__title">Войти на сайт</div>
                     <div class="popup__error"></div>
                     <form class="popup-form">
                     	<div class="input-field">
-                    		<input type="text" name="phone" placeholder="Телефон или e-mail" required>
+                    		<input type="text" name="email" placeholder="E-mail" required>
                     	</div>
                     	<div class="input-field mb30">
                     		<input type="password" name="password" placeholder="Пароль" required>
+                    	</div>
+                    	<div class="restore-link-wrapper">
+                    		<a href="#!" class="link popup-link pop-op" data-popup="restore-password">Забыли пароль?</a>
                     	</div>
                     	<div class="btn-wrapper">
 							<button class="btn">Войти</button>
 						</div>
 						<div class="popup-link-wrapper">
-							<a href="#!" class="link popup-link pop-op" data-popup="reg">Регистрация</a>
-							<a href="#!" class="link popup-link pop-op" data-popup="restore-password">Забыл пароль?</a>
+							<a href="#!" class="link popup-link pop-op" data-popup="reg">Зарегистрироваться</a>
 						</div>
                     </form>
                 </div>
@@ -558,19 +556,16 @@
 				<a href="#!" class="close-popup js-close-popup"></a>
                 <div class="popup__inner">
                 	<div class="popup__title">Регистрация</div>
-                    <div class="popup__title2">Войти с помощью вконтакте</div>
-                    <form class="popup-form">
-                    	<div class="soc-auth-wrapper">
-							<button>
-								<img src="img/vk.svg" alt="">
-							</button>
-						</div>
-                    </form>
-                    <div class="separate"></div>
                     <div class="popup__error"></div>
                     <form class="popup-form">
                     	<div class="input-field">
-                    		<input type="text" name="fio" placeholder="Ф.И.О." required>
+                    		<input type="text" name="lastName" placeholder="Фамилия" required>
+                    	</div>
+                    	<div class="input-field">
+                    		<input type="text" name="firstName" placeholder="Имя" required>
+                    	</div>
+                    	<div class="input-field mb20">
+                    		<input type="text" name="patronymic" placeholder="Отчество" required>
                     	</div>
                     	<div class="input-field">
                     		<input type="text" name="phone" class="phone-mask" placeholder="Телефон" required>                    		
@@ -599,91 +594,7 @@
 							<a href="#!" class="btn btn1 pop-op" data-popup="reg-confirm">Отправить</a>
 						</div>
 						<div class="popup-link-wrapper">
-							<a href="#!" class="link popup-link pop-op" data-popup="auth">Авторизация</a>
-						</div>
-                    </form>
-                </div>
-            </div>
-		</div>
-		<div id="reg1" class="popup reg-popup">
-			<div class="popup__wrap">
-				<a href="#!" class="close-popup js-close-popup"></a>
-                <div class="popup__inner">
-                	<div class="popup__title">Регистрация</div>
-                    <div class="popup__title2">Для завершения регистрации введи номер телефона. <br>На него будет отправлен пароль.</div>
-                    <div class="separate"></div>
-                    <div class="popup__error"></div>
-                    <form class="popup-form">
-                    	<div class="input-field">
-                    		<input type="text" name="phone" class="phone-mask" placeholder="Телефон" required>                    		
-                    	</div>
-                    	<div class="checkbox-wrapper">
-							<div class="input-field checkbox-field">
-	                            <label for="check-rules" class="checkbox">
-	                                <input id="check-rules" name="check-rules" type="checkbox" required>
-	                                <span class="checkmark"></span>
-	                                <span class="checkbox-text">Я согласен с <a href="#!" class="rules-link link" target="_blank">Правилами акции</a></span>
-	                            </label> 
-	                        </div>
-	                        <div class="input-field checkbox-field">
-	                            <label for="check-data" class="checkbox">
-	                                <input id="check-data" name="check-data" type="checkbox" required>
-	                                <span class="checkmark"></span>
-	                                <span class="checkbox-text">Я даю свое согласие на обработку моих персональных данных</span>
-	                            </label> 
-	                        </div>
-						</div>
-						<div class="btn-wrapper">
-							<!-- <button class="btn btn1"><span>Войти</span></button> -->
-							<a href="#!" class="btn btn1 pop-op" data-popup="reg-confirm">Отправить</a>
-						</div>
-						<div class="popup-link-wrapper">
-							<a href="#!" class="link popup-link pop-op" data-popup="auth">Авторизация</a>
-						</div>
-                    </form>
-                </div>
-            </div>
-		</div>
-		<div id="reg2" class="popup reg-popup">
-			<div class="popup__wrap">
-				<a href="#!" class="close-popup js-close-popup"></a>
-                <div class="popup__inner">
-                	<div class="popup__title">Регистрация</div>
-                    <div class="popup__title2">Для завершения регистрации введите ФИО, e-mail и номер телефона, <br>На него будет отправлен пароль.</div>
-                    <div class="separate"></div>
-                    <div class="popup__error"></div>
-                    <form class="popup-form">
-                    	<div class="input-field">
-                    		<input type="text" name="fio" placeholder="Ф.И.О." required>
-                    	</div>
-                    	<div class="input-field">
-                    		<input type="text" name="phone" class="phone-mask" placeholder="Телефон" required>                    		
-                    	</div>
-                    	<div class="input-field">
-                    		<input type="text" name="email" placeholder="E-mail" required>                    		
-                    	</div>
-                    	<div class="checkbox-wrapper">
-							<div class="input-field checkbox-field">
-	                            <label for="check-rules" class="checkbox">
-	                                <input id="check-rules" name="check-rules" type="checkbox" required>
-	                                <span class="checkmark"></span>
-	                                <span class="checkbox-text">Я согласен с <a href="#!" class="rules-link link" target="_blank">Правилами акции</a></span>
-	                            </label> 
-	                        </div>
-	                        <div class="input-field checkbox-field">
-	                            <label for="check-data" class="checkbox">
-	                                <input id="check-data" name="check-data" type="checkbox" required>
-	                                <span class="checkmark"></span>
-	                                <span class="checkbox-text">Я даю свое согласие на обработку моих персональных данных</span>
-	                            </label> 
-	                        </div>
-						</div>
-						<div class="btn-wrapper">
-							<!-- <button class="btn btn1"><span>Войти</span></button> -->
-							<a href="#!" class="btn btn1 pop-op" data-popup="reg-confirm">Отправить</a>
-						</div>
-						<div class="popup-link-wrapper">
-							<a href="#!" class="link popup-link pop-op" data-popup="auth">Авторизация</a>
+							<a href="#!" class="link popup-link pop-op" data-popup="auth">Войти на сайт</a>
 						</div>
                     </form>
                 </div>
@@ -693,8 +604,8 @@
 			<div class="popup__wrap">
 				<a href="#!" class="close-popup js-close-popup"></a>
                 <div class="popup__inner">
-                    <div class="popup__title">Регистрация пройдена</div>
-                    <div class="popup__desc">Пароль для входа на сайт отправлен на номер телефона, указанный при регистрации.</div>
+                    <div class="popup__title">Регистрация</div>
+                    <div class="popup__desc">Пароль выслан <br>на указанный вами адрес <br>электронной почты.</div>
                     <div class="btn-wrapper">
 						<a href="#!" class="btn pop-op" data-popup="auth">Авторизация</a>
 					</div>
@@ -717,12 +628,12 @@
 			<div class="popup__wrap">
 				<a href="#!" class="close-popup js-close-popup"></a>
                 <div class="popup__inner">
-                	<div class="popup__title">Сброс пароля</div>
+                	<div class="popup__title">Восстановить <br>пароль</div>
                     <form class="popup-form">
-                    	<div class="popup__desc before-send">Введи свой телефон для восстановления пароля<br>Мы отправим смс с паролем</div>
-                    	<div class="popup__desc after-send" style="display: none;">Пароль был отправлен в смс-сообщении</div>
+                    	<div class="popup__desc before-send">Укажите почту, с которой вы регистрировались на сайте</div>
+                    	<div class="popup__desc after-send" style="display: none;">Новый пароль был выслан на указанную почту</div>
                     	<div class="input-field">
-                    		<input type="text" name="phone" class="phone-mask" placeholder="Телефон" required>
+                    		<input type="text" name="email" placeholder="E-mail" required>
                     	</div>
                     	<div class="input-field mb30">
 							<span class="clock-text" style="display: none;">Можно отправить повторно через <span class="clock"></span></span>
@@ -731,38 +642,6 @@
 							<button class="btn">Отправить</button>
 						</div>
                     </form>
-                </div>
-            </div>
-		</div>
-		<div id="fresh-prize" class="popup">
-			<div class="popup__wrap">
-				<a href="#!" class="close-popup js-close-popup"></a>
-                <div class="popup__inner">
-                    <div class="popup__title">Предложи свой фреш <br>приз мечты и получи <br>шанс выиграть его</div>
-                    <div class="popup__error"></div>
-                    <form class="popup-form">
-                    	<div class="input-field">
-                    		<input type="text" name="fresh-prize" placeholder="Напиши приз который ты хочешь" required>
-                    	</div>
-                    	<div class="btn-wrapper">
-							<button class="btn">Отправить</button>
-						</div>
-                    </form>
-                </div>
-            </div>
-		</div>
-		<div id="get-prize" class="popup">
-			<div class="popup__wrap">
-				<a href="#!" class="close-popup js-close-popup"></a>
-                <div class="popup__inner">
-                    <div class="popup__title">Розыгрыш гарантированного <br>и ежедневного приза</div>
-                    <div class="spin-game">
-                    	<a href="#!" class="spin-btn"></a>
-                    </div>
-                    <div class="spin-prize">Твой приз — <span>Сертификат Магнит Косметик 300 ₽!</span></div>
-                    <div class="btn-wrapper spin-btn-wrapper">
-						<a href="#!" class="btn js-close-popup">Ок</a>
-					</div>
                 </div>
             </div>
 		</div>

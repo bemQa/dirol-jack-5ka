@@ -51,6 +51,7 @@ $(document).ready(function () {
 
     $('.table-wrapper').scrollbar();
     $('.faq-wrap').scrollbar();
+    $('.lk-table').scrollbar();
 
     function maskInit() {
         $(".phone-mask").inputmask({
@@ -133,6 +134,9 @@ $(document).ready(function () {
             let parent = $(this).parents('.select');
             $this.select2({
                 dropdownParent: parent
+            });
+            $this.on('select2:open', function (e) {
+              $(this).parents('.input-field').addClass('active');
             });
         });
     } else {

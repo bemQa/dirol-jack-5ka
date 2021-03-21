@@ -550,6 +550,11 @@ body .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
     text-transform: uppercase;
 }
 
+.popup-form .select2-container--default .select2-selection--single .select2-selection__rendered,
+.popup-form .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    text-align: center;
+}
+
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     width: 34rem;
     height: 26rem;
@@ -614,6 +619,12 @@ body .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
     background: rgba(255, 245, 104, 0.3);
     color: #000;
 }
+
+.select2-container--default .select2-search--dropdown input.select2-search__field:not([type="checkbox"]) {
+    text-transform: none;
+    transform: rotate(0) skewX(0);
+}
+
 /**/
 
 html,
@@ -980,7 +991,7 @@ footer .container {
 }
 
 .popup-form {
-    max-width: 600rem;
+    max-width: 520rem;
     width: 100%;
     margin: auto;
 }
@@ -1027,6 +1038,21 @@ footer .container {
     transform: rotate(-5deg) skewX(-10deg);
 }
 
+.delivery-address {
+    font-style: italic;
+    font-size: 18rem;
+    line-height: 22rem;
+    margin-bottom: 20rem;
+    transform: rotate(-5deg) skewX(-10deg);
+}
+
+.delivery-address ~ .link {
+    display: inline-block;
+    font-style: italic;
+    color: #FFE500;
+    transform: rotate(-5deg) skewX(-10deg);
+}
+
 .popup__error + .popup__desc {
     margin-top: 20rem;
 }
@@ -1043,6 +1069,10 @@ footer .container {
     position: relative;
     width: 100%;
     margin: 0 auto 10rem;
+}
+
+.input-field.active {
+    z-index: 2;
 }
 
 .input-field:last-child {
@@ -1198,11 +1228,11 @@ span.error {
     justify-content: center;
     max-width: 310rem;
     width: 100%;
-    height: 96rem;
+    height: 80rem;
     margin: auto;
-    padding: 30rem 0;
+    padding: 24rem 0;
     font-style: italic;
-    font-size: 36rem;
+    font-size: 32rem;
     line-height: 1;
     letter-spacing: 0.04em;
     text-align: center;
@@ -1361,25 +1391,21 @@ span.error {
     align-items: center;
     justify-content: center;
     font-style: italic;
-    font-size: 23rem;
-    line-height: 27rem;
+    font-size: 22rem;
+    line-height: 26rem;
     text-align: center;
     text-transform: uppercase;
-    color: #62BB46;
-    width: 220rem;
-    height: 85rem;
-    margin: 0 2rem;
-    padding: 10rem;
-    background: #fff;
-    box-shadow: 1.88217rem 1.88217rem 0rem #000;
+    text-decoration: underline;
+    color: #fff;
+    margin: 0 20rem;
     transition: all .2s linear;
     cursor: pointer;
 }
 
 .tab:not(.active):hover,
 .tab.active {
-    color: #009640;
-    background: #FFE500;
+    color: #FFE500;
+    text-decoration: none;
 }
 
 .tab.disabled {
@@ -1419,7 +1445,7 @@ table {
 table th {
     font-style: italic;
     font-weight: normal;
-    font-size: 20rem;
+    font-size: 18rem;
     line-height: 1.15;
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -1431,7 +1457,7 @@ table th {
 table tbody {
     font-style: italic;
     font-weight: normal;
-    font-size: 26rem;
+    font-size: 21rem;
     line-height: 1;
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -1455,10 +1481,28 @@ table td:nth-child(3) {
    min-width: 140rem;
 }
 
+.main-winner-announce {
+    max-width: 480rem;
+    width: 100%;
+    margin: auto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24rem;
+    line-height: 29rem;
+    text-align: center;
+    transform: rotate(-5deg) skewX(-10deg);
+}
+
 .lk-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 110rem;
+    max-width: 1310rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lk-col {
+    width: 50%;
 }
 
 .profile {
@@ -1468,7 +1512,7 @@ table td:nth-child(3) {
 }
 
 .profile-block {
-    margin-bottom: 50rem;
+    margin-bottom: 30rem;
 }
 
 .profile-label {
@@ -1486,6 +1530,58 @@ table td:nth-child(3) {
     color: #FFE500;
 }
 
+.card-block {
+    position: relative;
+    width: 410rem;
+    height: 84rem;
+    margin-bottom: 40rem;
+    padding: 12rem 50rem 12rem 105rem;
+}
+
+.card-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #008F32;
+    transform: skewX(-10deg);
+    z-index: 0;
+}
+
+.card-block * {
+    position: relative;
+}
+
+.card-img {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    margin: auto;
+    width: 91rem;
+}
+
+.card-title {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20rem;
+    line-height: 1.1;
+    margin-bottom: 6rem;
+}
+
+.card-link,
+.card-num {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22rem;
+    line-height: 26rem;
+    text-transform: uppercase;
+    color: #FFE500;
+}
+
 .lk-title {
     font-style: italic;
     font-size: 40rem;
@@ -1495,104 +1591,198 @@ table td:nth-child(3) {
     color: #fff;
     text-shadow: 4rem 2rem 0rem #000;
     transform: rotate(-5deg) skewX(-10deg);
-    margin-bottom: 30rem;
 }
 
-.lk-table {
-    max-width: 750rem;
-    min-width: 720rem;
-    margin-bottom: 50rem;
-}
-
-.lk-table .winners-date {
-    font-size: 20rem;
-    letter-spacing: -0.02em;
-    opacity: 0.6;
-}
-
-.lk-table table td {
-    vertical-align: bottom;
-    min-width: 250rem;
-}
-
-.lk-table table td:nth-child(1) {
-    min-width: 170rem;
-    max-width: none;
-}
-
-.lk-table table td:nth-child(2) {
-    max-width: 310rem;
-}
-
-.lk-table table td:nth-child(3) {
-    max-width: 150rem;
-    min-width: 150rem;
-}
-
-.status-icon {
-    max-width: 49rem;
-}
-
-.status-text {
-    color: #fff;
-}
-
-.code-form {
-    max-width: 500rem;
+.lk-table-announce {
+    max-width: 440rem;
     width: 100%;
-    margin: 30rem auto 40rem;
+    margin: 40rem auto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24rem;
+    line-height: 29rem;
+    text-align: center;
     transform: rotate(-5deg) skewX(-10deg);
 }
 
-.code-form .input-field input:not([type="checkbox"]) {
-    transform: none;
-    padding-left: 30rem;
+.lk-table {
+    max-width: 720rem;
+    width: 100%;
+    max-height: 620rem;
+    margin-bottom: 50rem;
+    padding-bottom: 40rem !important;
 }
 
-.code-btn {
+.lk-table.scroll-content {
+    padding: 30rem 25rem 0;
+}
+
+.check {
+    display: flex;
+    max-width: 650rem;
+    width: 100%;
+    margin-bottom: 20rem;
+    padding: 10rem 15rem;
+    background: #fff;
+    transform: rotate(-5deg) skewX(-10deg);
+}
+
+.check-col {
+    width: 280rem;
+}
+
+.check-col:first-child {
+    margin-right: 15rem;
+}
+
+.check-col-name {
+    font-style: italic;
+    color: #009640;
+    margin-bottom: 5rem;
+}
+
+.check-col-wrapper {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    min-height: 80rem;
+}
+
+.check-img {
+    width: 80rem;
+    height: 80rem;
+    overflow: hidden;
+    margin-right: 15rem;
+}
+
+.check-date {
+    font-style: italic;
+    color: #009640;
+}
+
+.wait .check-date {
+    color: #C4C4C4;
+}
+
+.check-status {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 21rem;
+    line-height: 25rem;
+    color: #009640;
+}
+
+.wait .check-status {
+    color: #C4C4C4;
+}
+
+.check-status.rejected {
+    position: relative;
+    padding-right: 35rem;
+    color: #ED1B31;
+}
+
+.check-status.rejected::after {
+    content: '?';
     position: absolute;
     top: 0;
-    right: 10rem;
+    right: 0;
     bottom: 0;
-    width: 75rem;
-    height: 75rem;
     margin: auto;
-    background: #ED1B31 url(../img/play-icon.svg) center no-repeat;
-    background-size: 33rem;
+    padding: 2rem;
+    width: 26rem;
+    height: 26rem;
+    background: #ED1B31;
+    color: #fff;
+    font-size: 22rem;
+    line-height: 1;
+    text-align: center;
 }
 
-.lk-fresh .title {
-    margin-bottom: 20rem;
+.check-prize-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    width: 89rem;
+    height: 81rem;
+    margin-right: 15rem;
+    transform: rotate(5deg) skewX(10deg);
+}
+
+.check-prize-name {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 21rem;
+    line-height: 25rem;
+    color: #009640;
+}
+
+.check-link {
+    font-style: italic;
+    font-weight: bold;
+    color: #ED1B31;
+}
+
+.iframe-wrap,
+.iframe-wrap iframe {
+    scrollbar-width: none;
+}
+
+.iframe-wrap {
+    height: 100%;
+    min-height: 340rem;
+    max-width: 300rem;
+    width: 100%;
+    margin: auto;
+}
+
+.iframe-wrap iframe {
+    height: 100vh;
+    max-height: 340rem;
+    width: 100%;
 }
 
 .lk-stickers {
-    max-width: 450rem;
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 470rem;
     width: 100%;
-    margin: 0 auto;
+    margin: 90rem 0 0;
+}
+
+.stickers-img {
+    position: absolute;
+    top: 15rem;
+    left: -70rem;
+    width: 217rem;
+}
+
+.stickers-info {
+    padding-left: 110rem;
 }
 
 .stickers-title {
     font-style: italic;
-    font-size: 32rem;
-    line-height: 39rem;
-    text-align: center;
+    font-size: 24rem;
+    line-height: 28rem;
     text-transform: uppercase;
     transform: rotate(-5deg) skewX(-10deg);
-    margin-bottom: 40rem;
+    margin-bottom: 10rem;
 }
 
 .stickers-title span {
+    font-size: 42rem;
+    line-height: 50rem;
     color: #FFE500;
 }
 
 .logout-link {
-    position: absolute;
-    top: -40rem;
-    right: 15rem;
     font-style: italic;
     font-size: 20rem;
     line-height: 1;
-    color: #C4C4C4;
 }
 
 .product-page {
@@ -1778,6 +1968,7 @@ table td:nth-child(3) {
 }
 
 .main-block {
+    position: relative;
     display: flex;
     -ms-align-items: center;
     align-items: center;
@@ -1785,36 +1976,18 @@ table td:nth-child(3) {
     max-width: 1830rem;
     width: 100%;
     margin: 0 auto 150rem;
-    padding: 0 15rem;
-}
-
-.main-jack {
-    position: relative;
-    max-width: 933rem;
-    width: 100%;
-    height: 680rem;
-}
-
-.main-jack img {
-    position: absolute;
-    top: -160rem;
-    left: 0;
-    max-width: 933rem;
-}
-
-.main-info {
-    display: flex;
-    flex-direction: column;
-    -ms-align-items: flex-end;
-    align-items: flex-end;
-    max-width: 885rem;
-    width: 100%;
+    padding: 606rem 15rem 0;
 }
 
 .kv {
-    max-width: 865rem;
+    position: absolute;
+    top: -125rem;
+    left: -58rem;
+    right: 0;
+    margin: auto;
+    max-width: 1802rem;
     width: 100%;
-    height: 368rem;
+    height: 953rem;
     background: url(../img/kv.png) center no-repeat;
     background-size: contain;
 }
@@ -1822,7 +1995,9 @@ table td:nth-child(3) {
 .steps {
     display: flex;
     justify-content: space-between;
+    max-width: 1028rem;
     width: 100%;
+    margin: auto;
     transform: rotate(-7deg) skewX(-10deg);
 }
 
@@ -1858,8 +2033,8 @@ table td:nth-child(3) {
     color: #FFE500;
 }
 
-.main-info .code-form {
-    transform: rotate(-7deg) skewX(-10deg);
+.step .btn {
+    transform: rotate(0) skewX(0);
 }
 
 .prizes {
@@ -2491,6 +2666,10 @@ table td:nth-child(3) {
         max-width: 100%;
     }
 
+    .popup__inner {
+        max-width: 320px;
+    }
+
     .popup__title {
         margin-bottom: 20px;
     }
@@ -2506,6 +2685,17 @@ table td:nth-child(3) {
     .clock-text {
         font-size: 18px;
         margin-bottom: 20px;
+    }
+
+    .delivery-address {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .delivery-address ~ .link {
+        font-size: 14px;
+        line-height: 1;
     }
 
     .popup__error {
@@ -2550,6 +2740,15 @@ table td:nth-child(3) {
         top: -50px;
         width: 27px;
         height: 21px;
+    }
+
+    .iframe-wrap {
+        min-height: 340px;
+        max-width: 300px;
+    }
+
+    .iframe-wrap iframe {
+        max-height: 340px;
     }
 
     .spin-game {
@@ -2597,18 +2796,14 @@ table td:nth-child(3) {
     }
 
     .tabs {
+        flex-wrap: wrap;
         margin-bottom: 40px;
     }
 
     .tab {
         font-size: 12px;
         line-height: 14px;
-        max-width: 128px;
-        width: 100%;
-        height: 46px;
-        margin: 0 2px;
-        padding: 10px;
-        box-shadow: 1px 1px 0px #000000;
+        margin: 10px 5px;
     }
 
     .tabs-content {
@@ -2645,22 +2840,25 @@ table td:nth-child(3) {
         max-width: 140px;
     }
 
-    .lk-table .winners-date {
-        font-size: 10px;
-        line-height: 18px;
-        opacity: 0.6;
+    .winners-date {
+        opacity: .6;
+    }
+
+    .main-winner-announce {
+        max-width: 300px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .lk-wrapper {
+        position: relative;
         flex-direction: column;
-        margin-bottom: 50px;
-    }
-
-    .lk-wrapper:last-child {
-        margin-bottom: 0;
+        max-width: 280px;
+        margin-top: 40px;
     }
 
     .lk-col {
+        width: 100%;
         display: flex;
         flex-direction: column;
         -ms-align-items: center;
@@ -2670,12 +2868,13 @@ table td:nth-child(3) {
 
     .profile {
         max-width: 300px;
-        margin-top: 40px;
+        margin-top: 0;
     }
 
     .logout-link {
-        top: 85px;
-        right: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
         font-size: 14px;
     }
 
@@ -2693,6 +2892,28 @@ table td:nth-child(3) {
         line-height: 18px;
     }
 
+    .card-block {
+        width: 280px;
+        height: 58px;
+        margin-bottom: 40px;
+        padding: 9px 40px 12px 84px;
+    }
+
+    .card-img {
+        width: 70px;
+    }
+
+    .card-title {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .card-link, 
+    .card-num {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
     .lk-title {
         font-size: 24px;
         line-height: 29px;
@@ -2701,63 +2922,127 @@ table td:nth-child(3) {
     }
 
     .lk-table {
-        margin-bottom: 0;
+        max-width: 300px;
+        max-height: 720px;
+        margin-bottom: 50px;
+        padding-bottom: 25px !important;
     }
 
-    .lk-table table tbody {
+    .lk-table.scroll-content {
+        padding: 30px 20px 0;
+    }
+
+    .check {
+        position: relative;
+        flex-direction: column;
+        max-width: 280px;
+        margin-bottom: 20px;
+        padding: 10px 10px 10px 90px;
+    }
+
+    .check-col {
+        width: auto;
+        min-height: 60px;
+    }
+
+    .check-col:first-child {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .check-col-name,
+    .check-date {
         font-size: 12px;
         line-height: 14px;
+        margin-bottom: 5px;
     }
 
-    .lk-table table td {
-        min-width: 100px;
+    .check-date {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: -70px;
+        margin: auto;
+        width: 65px;
     }
 
-    .lk-table table td:nth-child(1) {
-        max-width: 110px;
-        min-width: 50px;
+    .check-col-wrapper {
+        min-height: auto;
     }
 
-    .lk-table table td:nth-child(2) {
-        max-width: 115px;
+    .check-img {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
     }
 
-    .lk-table table td:nth-child(3) {
-        max-width: 90px;
-        min-width: 50px;
+    .check-status {
+        font-size: 18px;
+        line-height: 22px;
     }
 
-    .status-icon {
-        max-width: 24px;
+    .check-status.rejected {
+        padding-right: 25px;
     }
 
-    .code-form {
-        max-width: 300px;
-        margin: 40px auto;
-        order: -1;
+    .check-status.rejected::after {
+        width: 16px;
+        height: 16px;
+        padding: 2px;
+        font-size: 12px;
     }
 
-    .code-form .input-field input:not([type="checkbox"]) {
-        padding-left: 20px;
+    .check-prize-img {
+        position: absolute;
+        top: 85px;
+        left: 15px;
+        width: 60px;
+        height: 54px;
+        margin-right: 0;
     }
 
-    .code-btn {
-        right: 5px;
-        width: 40px;
-        height: 40px;
-        background-size: 20px;
+    .check-prize-name {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .check-link {
+        font-size: 14px;
+        line-height: 16px;
     }
 
     .lk-stickers {
+        flex-direction: column;
         max-width: 300px;
+        margin-top: 0;
         margin-bottom: 40px;
-        order: -1;
+    }
+
+    .stickers-img {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 217px;
+        margin: auto;
+    }
+
+    .stickers-info {
+        padding: 0;
     }
 
     .stickers-title {
         font-size: 18px;
         line-height: 22px;
-        margin-bottom: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .stickers-title span {
+        font-size: 32px;
+        line-height: 38px;
     }
 
     .lk-fresh .title {
