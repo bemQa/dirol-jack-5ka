@@ -903,8 +903,8 @@ footer .container {
 .faq-item-text {
     display: none;
     font-style: italic;
-    font-size: 31rem;
-    line-height: 37rem;
+    font-size: 28rem;
+    line-height: 33rem;
     margin-top: 10rem;
     padding-left: 80rem;
 }
@@ -915,8 +915,8 @@ footer .container {
 
 .feedback-desc {
     font-style: italic;
-    font-size: 25rem;
-    line-height: 30rem;
+    font-size: 18rem;
+    line-height: 22rem;
     text-align: center;
     text-transform: uppercase;
     max-width: 490rem;
@@ -2044,7 +2044,6 @@ table td:nth-child(3) {
 
 .prizes {
     position: relative;
-    margin-bottom: 100rem;
     z-index: 1;
 }
 
@@ -3187,6 +3186,7 @@ table td:nth-child(3) {
         flex-direction: column;
         -ms-align-items: center;
         align-items: center;
+        max-width: 300px;
     }
 
     .step {
@@ -3216,10 +3216,6 @@ table td:nth-child(3) {
 
     .main-info .code-form {
         margin: 0 auto 20px;
-    }
-
-    .prizes {
-        margin-bottom: 0;
     }
 
     .prizes-slider {
