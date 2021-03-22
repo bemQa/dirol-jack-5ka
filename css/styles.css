@@ -2011,12 +2011,13 @@ table td:nth-child(3) {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    max-width: 280rem;
+    max-width: 300rem;
     width: 100%;
-    height: 56rem;
+    height: 60rem;
+    margin-bottom: 10rem;
     background: #FFE500;
     font-style: italic;
-    font-size: 34rem;
+    font-size: 30rem;
     line-height: 1;
     text-transform: uppercase;
     color: #009640;
@@ -2031,6 +2032,10 @@ table td:nth-child(3) {
 
 .step-text a {
     color: #FFE500;
+}
+
+.step .btn-wrapper {
+    margin-top: 20rem;
 }
 
 .step .btn {
@@ -2097,7 +2102,7 @@ table td:nth-child(3) {
     max-width: 330rem;
     width: 100%;
     height: 56rem;
-    margin: auto;
+    margin: 0 auto 10px;
     background: #FFE500;
     font-style: italic;
     font-size: 31rem;
@@ -2105,6 +2110,11 @@ table td:nth-child(3) {
     text-transform: uppercase;
     color: #009640;
     transform: skewX(-10deg);
+}
+
+.prize4 .prize-name {
+    color: #fff;
+    background: #EB2316;
 }
 
 .prize-text {
@@ -2431,8 +2441,8 @@ table td:nth-child(3) {
     }
 
     .footer-announce {
-        font-size: 10px;
-        line-height: 12px;
+        font-size: 12px;
+        line-height: 14px;
     }
 
     .footer-links {
@@ -2646,10 +2656,10 @@ table td:nth-child(3) {
     }
 
     .btn {
-        max-width: 180px;
+        max-width: 230px;
         height: 54px;
         padding: 17px 0;
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .popup {
@@ -3161,37 +3171,16 @@ table td:nth-child(3) {
         flex-direction: column;
         max-width: 375px;
         margin-bottom: 50px;
-        padding: 0 15px;
-    }
-
-    .main-jack {
-        position: absolute;
-        top: 45px;
-        max-width: 277px;
-        height: 299px;
-    }
-
-    .main-jack img {
-        position: static;
-        top: auto;
-        max-width: 100%;
-    }
-
-    .main-info {
-        -ms-align-items: center;
-        align-items: center;
-        max-width: 300px;
+        padding: 400px 15px 0;
     }
 
     .kv {
-        position: relative;
-        max-width: 267px;
-        height: 88px;
-        margin-bottom: 250px;
+        top: -35px;
+        left: 0;
+        max-width: 300px;
+        height: 420px;
         background: url(../img/kv-mob.png) center no-repeat;
         background-size: contain;
-        order: -1;
-        z-index: 1;
     }
 
     .steps {
@@ -3201,7 +3190,7 @@ table td:nth-child(3) {
     }
 
     .step {
-        max-width: 220px;
+        max-width: 230px;
         margin: 0 auto 20px;
         margin-bottom: 20px;
     }
@@ -3210,7 +3199,7 @@ table td:nth-child(3) {
         max-width: 196px;
         height: 40px;
         margin: auto;
-        font-size: 23px;
+        font-size: 18px;
     }
 
     .step-text {
@@ -3218,12 +3207,19 @@ table td:nth-child(3) {
         line-height: 19px;
     }
 
+    .step .btn {
+        position: absolute;
+        top: -90px;
+        left: 0;
+        right: 0;
+    }
+
     .main-info .code-form {
         margin: 0 auto 20px;
     }
 
     .prizes {
-        margin-bottom: 50px;
+        margin-bottom: 0;
     }
 
     .prizes-slider {
